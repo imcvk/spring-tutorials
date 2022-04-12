@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd"
+       xmlns:context="http://www.springframework.org/schema/context">
+
+    <context:annotation-config/>
+    <!--
+    Using @Autowired on setter method
+    With <property> you can create without <property>as well
+    -->
+    <bean id="add1" class="beans.on_setter_method.Address1">
+        <property name="city" value="Solapur"/>
+        <property name="state" value="Maharashtra"/>
+    </bean>
+    <bean id="emp1" class="beans.on_setter_method.Emp1"/>
+
+    <!--
+    Using @Autowired on properties i.e variable in class
+    below bean declared with <constructor-arg> you can declare without <constructor-arg> as well ,
+    but in this case no value will be assigned to properties
+    -->
+    <bean id="add2" class="beans.on_properties.Address2">
+        <property name="city" value="Solapur"/>
+        <property name="state" value="Maharashtra"/>
+    </bean>
+    <bean id="emp2" class="beans.on_properties.Emp2"/>
+
+    <!--
+        Using @Autowired on constructor.
+        -->
+    <bean id="add3" class="beans.on_constructor.Address3">
+        <property name="city" value="Solapur"/>
+        <property name="state" value="Maharashtra"/>
+    </bean>
+    <bean id="emp3" class="beans.on_constructor.Emp3"/>
+
+</beans>

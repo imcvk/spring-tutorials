@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring-mvc-with-orm:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/spring_mvc_with_orm_war</output-path>
+    <root id="archive" name="spring-mvc-with-orm_war.war">
+      <element id="artifact" artifact-name="spring-mvc-with-orm:war exploded" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/webapp" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+    </root>
+  </artifact>
+</component>

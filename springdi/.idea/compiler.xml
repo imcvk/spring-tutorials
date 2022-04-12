@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="di-using-autowiring" />
+        <module name="diBy-NonStaticFactoryMethodReturningAnotherClassInstance" />
+        <module name="di-using-autowired-annotation" />
+        <module name="di-py-staticfactorymethodreturnsinstanceofanotherclass" />
+        <module name="diByStaticFactoryMethodReturningAnotherClassInstance" />
+        <module name="di-using-setter" />
+        <module name="di-using-constructor" />
+        <module name="inject-the-dependency-by-static-factory-method" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="di-by-staticfactorymethod-returns-instance-of-another-class" target="11" />
+      <module name="di-staticfactorymethodreturnsinstanceofanotherclass" target="11" />
+      <module name="diBy-static-factory-method-returns-instance-of-another-class" target="11" />
+      <module name="diBy-StaticFactoryMethodReturnsInstanceOfAnotherClass" target="11" />
+      <module name="diByStaticFactoryMethodReturningSameClassInstance-singletonDesignPattern" target="11" />
+      <module name="ditestannotation" target="11" />
+      <module name="test-constructor-injection" target="11" />
+      <module name="test-setter-injection" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
