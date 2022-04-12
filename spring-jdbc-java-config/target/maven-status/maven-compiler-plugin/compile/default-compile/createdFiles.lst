@@ -1,6 +1,0 @@
-com/spring/config/JDBCConfig.class
-com/spring/dao/StudentDAOImpl.class
-com/spring/entities/Student.class
-com/spring/dao/RowMapperImpl.class
-com/spring/dao/StudentDAO.class
-com/spring/mainapp/MainApp.class

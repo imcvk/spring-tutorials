@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="answer1" class="com.springdi.Setter_Injection_with_Non_String_Map_having_dependent_Object.Answer">
+        <property name="id" value="1"/>
+        <property name="answer" value="Java is a Programming Language"/>
+        <property name="postedDate" value="12/12/2001"/>
+    </bean>
+    <bean id="answer2" class="com.springdi.Setter_Injection_with_Non_String_Map_having_dependent_Object.Answer">
+        <property name="id" value="2"/>
+        <property name="answer" value="Java is a Platform"/>
+        <property name="postedDate" value="12/12/2003"/>
+    </bean>
+
+    <bean id="user1" class="com.springdi.Setter_Injection_with_Non_String_Map_having_dependent_Object.User">
+        <property name="id" value="1"/>
+        <property name="name" value="Arun Kumar"/>
+        <property name="email" value="arun@gmail.com"/>
+    </bean>
+    <bean id="user2" class="com.springdi.Setter_Injection_with_Non_String_Map_having_dependent_Object.User">
+        <property name="id" value="2"/>
+        <property name="name" value="Varun Kumar"/>
+        <property name="email" value="Varun@gmail.com"/>
+    </bean>
+
+    <bean id="q" class="com.springdi.Setter_Injection_with_Non_String_Map_having_dependent_Object.Question">
+        <property name="id" value="1"/>
+        <property name="name" value="What is Java?"/>
+        <property name="answers">
+            <map>
+                <entry key-ref="answer1" value-ref="user1"/>
+                <entry key-ref="answer2" value-ref="user2"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>

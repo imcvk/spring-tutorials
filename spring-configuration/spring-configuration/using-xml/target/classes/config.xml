@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd"
+       xmlns:context="http://www.springframework.org/schema/context">
+    <bean id="student" class="beans.Student">
+<!--        Using Constructor argument-->
+<!--        <constructor-arg name="name" value="Sachin"/>-->
+<!--        <constructor-arg name="rollNo" value="34534"/>-->
+<!--        Using property-->
+<!--        <property name="name" value="Sachin"/>-->
+<!--        <property name="rollNo" value="345345"/>-->
+    </bean>
+</beans>
